@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio Saya</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        color: #333;
+      }
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 1rem;
+        text-align: center;
+      }
+      header h1 {
+        margin: 0;
+      }
+      nav {
+        margin: 1rem 0;
+      }
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 1rem;
+      }
+      nav a:hover {
+        text-decoration: underline;
+      }
+      .container {
+        width: 80%;
+        margin: auto;
+        overflow: hidden;
+      }
+      .section {
+        padding: 2rem 0;
+      }
+      .section h2 {
+        border-bottom: 2px solid #333;
+        padding-bottom: 0.5rem;
+      }
+      .project,
+      .contact-form {
+        background: #fff;
+        padding: 1rem;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 1rem;
+      }
+      .project img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+      }
+      .contact-form input,
+      .contact-form textarea {
+        width: 100%;
+        padding: 0.75rem;
+        margin-bottom: 1rem;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+      }
+      .contact-form button {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 0.75rem;
+        border-radius: 5px;
+        font-size: 1rem;
+        cursor: pointer;
+      }
+      .contact-form button:hover {
+        background-color: #0056b3;
+      }
+      footer {
+        background: #333;
+        color: #fff;
+        text-align: center;
+        padding: 1rem;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Nama Anda</h1>
+        <nav>
+          <a href="#about">Tentang</a>
+          <a href="#projects">Proyek</a>
+          <a href="#contact">Kontak</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="about" class="section">
+        <h2>Tentang Saya</h2>
+        <img
+          src="WhatsApp Image 2024-09-10 at 13.45.47.jpeg"
+          height="200"
+          width="200"
+        />
+        <p>
+          Selamat datang di portofolio saya! Saya adalah [deskripsi singkat
+          tentang diri Anda, keahlian, dan pengalaman]. Saya memiliki pengalaman
+          dalam [bidang keahlian] dan saya sangat antusias untuk mengerjakan
+          proyek-proyek yang menantang.
+        </p>
+      </section>
+
+      <section id="projects" class="section">
+        <h2>Proyek Saya</h2>
+        <div class="project">
+          <h3>Proyek 1</h3>
+          <img
+            src="WhatsApp Image 2024-09-10 at 10.34.08.jpeg"
+            alt="Deskripsi gambar proyek 1"
+            height="150"
+            width="150"
+          />
+          <p>
+            Deskripsi singkat tentang Proyek 1. Sertakan teknologi yang
+            digunakan dan pencapaian utama dari proyek ini.
+          </p>
+        </div>
+        <div class="project">
+          <h3>Proyek 2</h3>
+          <img
+            src="WhatsApp Image 2024-09-10 at 10.34.09.jpeg"
+            alt="Deskripsi gambar proyek
+          2"
+            height="150"
+            width="150"
+          />
+          <p>
+            Deskripsi singkat tentang Proyek 2. Sertakan teknologi yang
+            digunakan dan pencapaian utama dari proyek ini.
+          </p>
+        </div>
+        <!-- Tambahkan lebih banyak proyek sesuai kebutuhan -->
+      </section>
+
+      <section id="contact" class="section">
+        <h2>Kontak</h2>
+        <div class="contact-form">
+          <form action="/submit-contact" method="post">
+            <label for="name">Nama</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="message">Pesan</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Kirim Pesan</button>
+          </form>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <p>&copy; 2024 Nama Anda. Semua hak dilindungi.</p>
+    </footer>
+  </body>
+</html>
